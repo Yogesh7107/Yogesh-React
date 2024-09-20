@@ -22,7 +22,7 @@ function Addproductpage() {
   const handlesubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/product", AddDtata)
+      .post(" http://localhost:3000/product", AddDtata)
       .then((res) => {
         setAddData(res.data)
         alert("data add succesfully...")

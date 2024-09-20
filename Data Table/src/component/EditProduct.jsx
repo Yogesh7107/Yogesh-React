@@ -20,7 +20,7 @@ function EditProduct() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/product/${id}`)
+      .get(`http://localhost:3000/product/${id}`)
       .then((response) => setformdata(response.data))
       .catch((error) => console.error("Error fetching product:", error));
   }, [id]);

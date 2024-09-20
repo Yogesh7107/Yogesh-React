@@ -8,7 +8,7 @@ function ProductDetails() {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/product/${id}`)
+    axios.get(`http://localhost:3000/product/${id}`)
       .then((response) => setProduct(response.data))
       .catch((error) => console.error("Error fetching product:", error));
   }, [id]);

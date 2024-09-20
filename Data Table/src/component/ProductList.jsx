@@ -23,7 +23,7 @@ function ProductList() {
       params.category = filter;
     }
     axios
-      .get("http://localhost:8000/product", { params })
+      .get("http://localhost:3000/product", { params })
       .then((response) => setprodata(response.data))
       .catch((error) => console.error("Error fetching data:", error));
   }, [filter, sort, page, search]);

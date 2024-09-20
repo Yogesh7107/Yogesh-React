@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Nav } from "react-bootstrap";
+import React, { useEffect} from "react";
+
 
 function Navbar() {
-  const [isFixed, setIsFixed] = useState(false);
+
 
   useEffect(() => {
   }, []);

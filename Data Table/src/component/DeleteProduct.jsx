@@ -9,7 +9,7 @@ function DeleteProduct() {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/product/${id}`)
+      .get(`http://localhost:3000/product/${id}`)
       .then((response) => setddeleteProduct(response.data))
       .catch((error) => console.error("Error fetching product:", error));
   }, [id]);
@@ -17,7 +17,7 @@ function DeleteProduct() {
   const handledelete = (e) => {
     e.preventDefault();
     axios
-      .delete(`http://localhost:8000/product/${id}`)
+      .delete(`http://localhost:3000/product/${id}`)
       .then((res) => {
         navigate("/");
       })
